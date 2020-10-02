@@ -1,0 +1,17 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  born: 2020-10-01
+  gender: 1
+  award: MyString
+  p_duty_id: 1
+  p_duty_type: MyString
+
+two:
+  name: MyString
+  born: 2020-10-01
+  gender: 1
+  award: MyString
+  p_duty_id: 1
+  p_duty_type: MyString
