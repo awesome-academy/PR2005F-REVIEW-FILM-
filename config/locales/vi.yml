@@ -1,0 +1,13 @@
+vi:
+  layouts:
+    header:
+      Homepage: "Trang Chủ"
+      Categories: "Thể loại"
+      Anime_Details: "Chi tiết phim"
+      Anime_Watching: "Xem phim"
+      Blog_Details: "Nội dung chi tiết"
+      Sign_Up: "Đăng kí"
+      Sign_In: "Đăng nhập"
+      Our_Blog: "Bài viết"
+      Contacts: "Liên hệ"
+      

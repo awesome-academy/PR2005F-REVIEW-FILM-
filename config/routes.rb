@@ -15,5 +15,8 @@ Rails.application.routes.draw do
         get '/users/sign_out' => 'devise/sessions#destroy'
         end
     end
-
+  scope "(:locale)", locale: /en|vi/ do
+    resources :reviews
+    resources :users
+  end
 end

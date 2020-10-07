@@ -14,19 +14,21 @@
                     <div class="header__nav">
                         <nav class="header__menu mobile-menu">
                             <ul>
-                                <li class="active"><a href="./index.html">Homepage</a></li>
-                                <li><a href="./categories.html">Categories <span class="fas fa-angle-down"></span></a>
+                                <li class="active"><a href="./index.html"> <%= t ".Homepage" %> </a></li>
+                                <li><a href="./categories.html"> <%= t ".Categories" %><span class="fas fa-angle-down"></span></a>
                                     <ul class="dropdown">
-                                        <li><a href="./categories.html">Categories</a></li>
-                                        <li><a href="./anime-details.html">Anime Details</a></li>
-                                        <li><a href="./anime-watching.html">Anime Watching</a></li>
-                                        <li><a href="./blog-details.html">Blog Details</a></li>
-                                        <li><a href="http://localhost:3000/users/sign_up">Sign Up</a></li>
-                                        <li><a href="http://localhost:3000/users/sign_in">Sign In</a>
+                                        <li><a href="./categories.html"> <%= t ".Categories" %> </a></li>
+                                        <li><a href="./anime-details.html"> <%= t ".Anime_Details" %> </a></li>
+                                        <li><a href="./anime-watching.html"> <%= t ".Anime_Watching" %> </a></li>
+                                        <li><a href="./blog-details.html"> <%= t ".Blog_Details" %> </a></li>
+                                        <li><a href="http://localhost:3000/users/sign_up"> <%= t ".Sign_Up" %> </a></li>
+                                        <li><a href="http://localhost:3000/users/sign_in"> <%= t ".Sign_In" %> </a>
                                     </ul>
                                 </li>
-                                <li><a href="./blog.html">Our Blog</a></li>
-                                <li><a href="#">Contacts</a></li>
+                                <li><a href="./blog.html"> <%= t ".Our_Blog" %> </a></li>
+                                <li><a href="#"> <%= t ".Contacts" %> </a></li>
+                                <%= link_to "English", locale:"en" %> 
+                            <%= link_to "| Vietnamese", locale:"vi" %>
                             </ul>
                         </nav>
                     </div>

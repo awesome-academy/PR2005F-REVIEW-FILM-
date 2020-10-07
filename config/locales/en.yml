@@ -30,4 +30,19 @@
 # available at https://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  layouts:
+    header:
+      Homepage: "Home Page"
+      Categories: "Categories"
+      Anime_Details: "Anime Details"
+      Anime_Watching: "Anime Watching"
+      Blog_Details: "Blog Details"
+      Sign_Up: "Sign Up"
+      Sign_In: "Sign In"
+      Our_Blog: "Our Blog"
+      Contacts: "Contacts"
+      
+
+      
+
+
