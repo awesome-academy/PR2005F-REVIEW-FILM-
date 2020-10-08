@@ -6,6 +6,10 @@ Rails.application.routes.draw do
   get 'films/show'
   get 'films/detail'
     
+  namespace :admin do
+        get 'static_pages/home'
+        
+    end
    devise_for :users,
               path: '',
               path_names: {sign_in: 'login' ,sign_out: 'logout' ,edit: 'profile',sign_up: 'resgistration'},
@@ -20,5 +24,8 @@ Rails.application.routes.draw do
   scope "(:locale)", locale: /en|vi/ do
     resources :reviews
     resources :users
+    resources :admin
+    get 'admin/static_pages/home'
   end
+    resources :films
 end

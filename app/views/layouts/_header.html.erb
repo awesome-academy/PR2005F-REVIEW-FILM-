@@ -17,19 +17,21 @@
                                 <li class="active"><a href="./index.html"> <%= t ".Homepage" %> </a></li>
                                 <li><a href="./categories.html"> <%= t ".Categories" %> <i class="fas fa-sort-down"></i></a>
                                     <ul class="dropdown">
-                                        <li><a href="./categories.html"> <%= t ".Categories" %> </a></li>
-                                        <li><a href="./anime-details.html"> <%= t ".Anime_Details" %> </a></li>
+                                        <li><%= link_to ("Categories"), films_path %></li>
                                         <li><a href="./anime-watching.html"> <%= t ".Anime_Watching" %> </a></li>
                                         <li><a href="./blog-details.html"> <%= t ".Blog_Details" %> </a></li>
                                         <li><a href="http://localhost:3000/users/sign_up"> <%= t ".Sign_Up" %> </a></li>
                                         <li><a href="http://localhost:3000/users/sign_in"> <%= t ".Sign_In" %> </a>
                                     </ul>
                                 </li>
-                                <li><a href="./blog.html"> <%= t ".Our_Blog" %> </a></li>
+                                <li> <%= link_to (t".Our_Blog"), reviews_path %> </li>
                                 <li><a href="#"> <%= t ".Contacts" %> </a></li>
                                 <li><a href="./categories.html"> <%= t ".Languages" %> <i class="fas fa-sort-down"></i></a>
                                     <ul class="dropdown">
-                                        <li><%= link_to image_tag("united-states-of-america.png"), locale:"en" %></li>
+                                        <li>
+                                         <%= link_to image_tag("united-states-of-america.png"), locale:"en" %>
+                                        </li>
+
                                         <li><%= link_to image_tag("vietnam.png"), locale:"vi" %></li>
                                     </ul>
                                 </li>

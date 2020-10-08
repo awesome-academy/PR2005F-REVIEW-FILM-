@@ -11,10 +11,28 @@ vi:
       Our_Blog: "Bài viết"
       Contacts: "Liên hệ"
       Languages: "Ngôn ngữ"
+    admin:
+      sidebar:
+        MAIN_NAVIGATION: "THANH ĐIỀU HƯỚNG"
+        User_Management: "Quản lý thành viên"
+        User_Reviews: "Bài viết của thành viên"
+        User_Reports: "Tố cáo của thành viên"
+        Review_Management: "Quản lý bài viết"
+        Create_new_review: "Tạo bài viết mới"
+        Pending: "Đang chờ xử lí"
+        Approved: "Đã duyệt"
+        Videos_&_Photos: "Phim & Hình ảnh"
+        Videos: "Phim"
+        Photos: "Hình ảnh"
+        Languages: "Ngôn ngữ"
+        Settings: "CÀI ĐẶT"
+      header:
+         Admin: "Người quản lý"
+
+
       
   films:
       detail:
         Home: "Trang chủ"
         Categories: "Thể loại"
         Romance: "Lãng mạn"
-      
