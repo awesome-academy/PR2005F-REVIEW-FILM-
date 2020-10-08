@@ -3,6 +3,8 @@ Rails.application.routes.draw do
   root 'pages#index'
   get 'pages/review'
   get 'films/index'
+  get 'films/show'
+  get 'films/detail'
     
    devise_for :users,
               path: '',

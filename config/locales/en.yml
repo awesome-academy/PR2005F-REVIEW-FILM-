@@ -41,6 +41,12 @@ en:
       Sign_In: "Sign In"
       Our_Blog: "Our Blog"
       Contacts: "Contacts"
+      Languages: "Languages"
+  films:
+    detail:
+      Home: "Home"
+      Categories: "Categories"
+      Romance: "Romance"
       
 
       
