@@ -59,4 +59,7 @@ gem "omniauth-facebook"
 gem "omniauth-google-oauth2"
 gem 'activerecord-session_store'
 gem 'rails-i18n'
+gem "paperclip"
+gem "paperclip-av-transcoder"
+
 

@@ -16,7 +16,7 @@ $fa-font-path: '@fortawesome/fontawesome-free/webfonts';
 @import '@fortawesome/fontawesome-free/scss/brands';
 @import '@fortawesome/fontawesome-free/scss/v4-shims';
 
-
+// background-image  của trang Sign In & Sign Up.
 .normal-breadcrumb {
 	background-image: url(normal-breadcrumb.jpg);
 }
@@ -25,4 +25,7 @@ $fa-font-path: '@fortawesome/fontawesome-free/webfonts';
 	color: white;
 }
 
-
+// CSS không cho chuột trỏ vào video Homepage.
+.noHover{
+    pointer-events: none;
+}

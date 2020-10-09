@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_10_07_035937) do
+ActiveRecord::Schema.define(version: 2020_10_08_014135) do
 
   create_table "actors", force: :cascade do |t|
     t.string "name"
@@ -50,6 +50,9 @@ ActiveRecord::Schema.define(version: 2020_10_07_035937) do
     t.string "content"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.string "video"
+    t.string "title"
+    t.string "body"
   end
 
   create_table "genres", force: :cascade do |t|

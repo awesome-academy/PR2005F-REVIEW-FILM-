@@ -10,4 +10,11 @@ vi:
       Sign_In: "Đăng nhập"
       Our_Blog: "Bài viết"
       Contacts: "Liên hệ"
+      Languages: "Ngôn ngữ"
+      
+  films:
+      detail:
+        Home: "Trang chủ"
+        Categories: "Thể loại"
+        Romance: "Lãng mạn"
       
