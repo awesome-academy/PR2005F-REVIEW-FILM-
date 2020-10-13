@@ -42,12 +42,33 @@ en:
       Our_Blog: "Our Blog"
       Contacts: "Contacts"
       Languages: "Languages"
+    admin:
+      sidebar:
+        MAIN_NAVIGATION: "MAIN NAVIGATION"
+        User_Management: "User Management"
+        User_Reviews: "User Reviews"
+        User_Reports: "User Reports"
+        Review_Management: "Review Manegement"
+        Create_new_review: "Create new reviews"
+        Pending: "Pending"
+        Approved: "Approved"
+        Videos_&_Photos: "Videos & Photos"
+        Videos: "Videos"
+        Photos: "Photos"
+        Languages: "Languages"
+        Settings: "Settings"
+      header:
+        Admin: "Admin"
+
+
+
+
   films:
     detail:
       Home: "Home"
       Categories: "Categories"
       Romance: "Romance"
-      
+
 
       
 

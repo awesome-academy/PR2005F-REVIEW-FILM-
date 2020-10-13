@@ -7,7 +7,20 @@ require("@rails/ujs").start()
 require("turbolinks").start()
 require("@rails/activestorage").start()
 require("channels")
+require('admin-lte')
 import "@fortawesome/fontawesome-free/js/all";
+import 'bootstrap';
+import "admin-lte/dist/css/AdminLTE.css";
+import "admin-lte/dist/css/skins/_all-skins.css";
+import 'bootstrap/dist/css/bootstrap.css';
+import 'bootstrap/dist/css/bootstrap-theme';
+import '../stylesheets/application';
+import "font-awesome/css/font-awesome.css";
+
+document.addEventListener("turbolinks:load", () => {
+  $('[data-toggle="tooltip"]').tooltip()
+});
+
 //= require jquery3
 //= require popper
 //= require bootstrap-sprockets
