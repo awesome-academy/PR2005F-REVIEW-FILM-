@@ -1,0 +1,11 @@
+<%= form_for ([@film, @review]) do |f| %>
+		<p>
+		    <%= render 'shared/error_messages', object: f.object %>
+		    <%= f.hidden_field :film_id, value: @film.id %>
+			<%= f.text_field :title,placeholder: "Title" ,class: "form-control" %>
+			<%= f.cktext_area :content, placeholder: "Compose new micropost..." %>
+		</p>
+		<p> 
+			<%= f.submit "POST REVIEW", class: "site-btn" %>
+		</p>
+<% end %>	

@@ -5,10 +5,11 @@ class User < ApplicationRecord
   			:recoverable, :rememberable, :validatable,
   			 :omniauthable, omniauth_providers: [:facebook]
     has_many :ratings
-	has_many :comments
-	has_many :sub_comments
-	has_many :reviews
-	has_many :watch_lists
+  	has_many :comments
+  	has_many :sub_comments
+  	has_many :reviews, dependent: :destroy
+  	has_many :watch_lists
+    
 	def self.from_omniauth(auth)
     result = User.where(email: auth.info.email).first
     if result
@@ -26,5 +27,9 @@ class User < ApplicationRecord
      
       end
     end
+  end
+
+  def feed
+    self.reviews
   end
 end

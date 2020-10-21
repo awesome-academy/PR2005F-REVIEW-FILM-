@@ -62,4 +62,8 @@ gem 'rails-i18n'
 gem "paperclip"
 gem "paperclip-av-transcoder"
 gem 'slim-rails'
+gem 'ckeditor'
+gem 'paperclip'
+gem "mini_magick"
+gem 'carrierwave'
 

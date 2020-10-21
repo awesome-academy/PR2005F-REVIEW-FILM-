@@ -4,8 +4,6 @@
             <div class="row">
                 <div class="col-lg-2">
                     <div class="header__logo">
-                   
-                            <img src="img/logo.png" alt="">
                             <%= link_to image_tag("logo.png"), root_path %>
                         </a>
                     </div>
@@ -17,11 +15,13 @@
                                 <li class="active"><a href="./index.html"> <%= t ".Homepage" %> </a></li>
                                 <li><a href="./categories.html"> <%= t ".Categories" %> <i class="fas fa-sort-down"></i></a>
                                     <ul class="dropdown">
-                                        <li><%= link_to ("Categories"), films_path %></li>
-                                        <li><a href="./anime-watching.html"> <%= t ".Anime_Watching" %> </a></li>
-                                        <li><a href="./blog-details.html"> <%= t ".Blog_Details" %> </a></li>
-                                        <li><a href="http://localhost:3000/users/sign_up"> <%= t ".Sign_Up" %> </a></li>
-                                        <li><a href="http://localhost:3000/users/sign_in"> <%= t ".Sign_In" %> </a>
+
+                                        <li> <%= link_to ("Categories"), films_path %></li>
+                                        <li> <%= link_to (t".Anime_Watching"), films_path %> </a></li>
+                                        <li> <%= link_to (t".Blog_Details"), '#' %> </a></li>
+                                        <li> <%= link_to (t".Sign_Up"), new_user_registration_path %> </li>
+                                        <li> <%= link_to (t".Sign_In"), signin_path %> </li>
+
                                     </ul>
                                 </li>
                                 <li> <%= link_to (t".Our_Blog"), reviews_path %> </li>
@@ -46,7 +46,5 @@
                     </div>
                 </div>
             </div>
-            <div id="mobile-menu-wrap"></div>
-        </div>
     </header>
     <!-- Header End --> 

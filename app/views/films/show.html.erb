@@ -28,7 +28,10 @@
                 <div class="col-lg-8">
                     <div class="anime__details__review">
                         <div class="section-title">
+                            <span>
                             <h5>Reviews</h5>
+                            <i><%= link_to "Create a review", new_film_review_path(@film), class: "site-btn"   %></i>
+                            </span>
                         </div>
                         <div class="anime__review__item">
                             <div class="anime__review__item__pic">
@@ -93,7 +96,7 @@
                         </div>
                         <form action="#">
                             <textarea placeholder="Your Comment"></textarea>
-                            <button type="submit"><i class="fa fa-location-arrow"></i> Review</button>
+                            <button type="submit"><i class="fa fa-location-arrow"></i> Comment </button>
                         </form>
                     </div>
                 </div>
