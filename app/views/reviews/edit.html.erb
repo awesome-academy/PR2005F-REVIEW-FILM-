@@ -1,4 +1,127 @@
-<center><h1> Edit | Anime </h1></center>
-<div class = "formpost">
-	<%= render "form" %>
-</div>
+
+    <!-- Blog Details Section Begin -->
+    <section class="blog-details spad">
+        <div class="container">
+            <div class="row d-flex justify-content-center">
+                <div class="col-lg-8">
+                    <div class="blog__details__title">
+                        <h6> Edit  <span> | Anime Review </span></h6>
+                        <h2> <%= @review.title %> </h2>
+                        <div class="blog__details__social">
+                            <a href="#" class="facebook"><i class="fab fa-facebook-f"></i> Facebook</a>
+                            <a href="#" class="pinterest"><i class="fab fa-pinterest"></i> Pinterest</a>
+                            <a href="#" class="linkedin"><i class="fab fa-linkedin-in"></i> Linkedin</a>
+                            <a href="#" class="twitter"><i class="fab fa-twitter"></i> Twitter</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-12">
+                    <div class="blog__details__pic">
+                        <img src="img/blog/details/blog-details-pic.jpg" alt="">
+                        <%= image_tag("blog/details/blog-details-pic.jpg") %>
+                    </div>
+                </div>
+        </section>
+                <!-- Anime Section Begin -->
+    <section class="anime-details spad">
+        <div class="container">
+            <div class="anime__details__content">
+                <div class="row">
+                    <div class="col-lg-3">
+                        <div class="anime__details__pic set-bg" data-setbg="img/anime/details-pic.jpg">
+                            <%= image_tag("anime/details-pic.jpg") %>
+                            <div class="comment"><i class="fa fa-comments"></i> 11</div>
+                            <div class="view"><i class="fa fa-eye"></i> 9141</div>
+                        </div>
+                        <div class="anime__details__btn">
+                                <a href="#" class="watch-btn"><span>Watch trailer now</span>  <i
+                                    class="fas fa-arrow-right"></i></a>
+                                </div>
+
+                    </div>
+                    <div class="col-lg-9">
+                        <div class="anime__details__text">
+                            <div class="anime__details__title">
+                                <h3> <%= @review.title %> </h3>
+                                <span>フェイト／ステイナイト, Feito／sutei naito</span>
+                            </div>
+                             <div class="anime__details__widget">
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-6">
+                                        <ul>
+                                            <li><span>Type:</span> TV Series</li>
+                                            <li><span>Studios:</span> Lerche</li>
+                                            <li><span>Date aired:</span> Oct 02, 2019 to ?</li>
+                                            <li><span>Status:</span> Airing</li>
+                                            <li><span>Genre:</span> Action, Adventure, Fantasy, Magic</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6">
+                                        <ul>
+                                            <li><span>Scores:</span> 7.31 / 1,515</li>
+                                            <li><span>Rating:</span> 8.5 / 161 times</li>
+                                            <li><span>Duration:</span> 24 min/ep</li>
+                                            <li><span>Quality:</span> HD</li>
+                                            <li><span>Views:</span> 131,541</li>
+                                        </ul>
+                                    </div>
+                            <div class="anime__details__rating">
+                                <div class="rating">
+                                    <a href="#"><i class="fa fa-star"></i></a>
+                                    <a href="#"><i class="fa fa-star"></i></a>
+                                    <a href="#"><i class="fa fa-star"></i></a>
+                                    <a href="#"><i class="fa fa-star"></i></a>
+                                    <a href="#"><i class="fa fa-star-half-o"></i></a>
+                                </div>
+                                <span>1.029 Votes</span>
+                                <div class="anime__details__btn">
+                                <a href="#" class="follow-btn"><i class="fas fa-heart"></i> Follow</a></br>
+                            </div>
+                            </div>
+
+                            <div class="section-title">
+                                    <h4>Review :</h4>
+                                    <p> <%= @review.content.html_safe %> </p>
+                                </div>
+                          
+                            
+                           
+                                </div>
+                            </div>
+                            
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              <div class="blog__details__tags">
+                            <a href="#">Healthfood</a>
+                            <a href="#">Sport</a>
+                            <a href="#">Game</a>
+                        </div>
+                        <div class="blog__details__btns">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="blog__details__btns__item">
+                                        <h5><a href="#"><span class="arrow_left"></span> Building a Better LiA...</a>
+                                        </h5>
+                                    </div>
+                                </div>
+                        </div>
+                            <div class="blog__details__form">
+                               <center> <h4> EDIT | ANIME REVIEWS </h4> </center> 
+                               
+                                    <div class="row">
+                                        
+                                        <div class="col-lg-12">
+                                            <%= render 'form' %>
+                                        </div>
+                                    </div>
+                              
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Blog Details Section End -->
+

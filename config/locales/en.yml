@@ -69,6 +69,10 @@ en:
       Categories: "Categories"
       Romance: "Romance"
 
+  reviews:
+    new:
+      Your_Title: "Your_Title"
+      Your_review_content: "Your review content"
 
       
 

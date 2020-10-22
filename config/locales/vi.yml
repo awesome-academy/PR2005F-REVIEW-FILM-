@@ -36,3 +36,7 @@ vi:
         Home: "Trang chủ"
         Categories: "Thể loại"
         Romance: "Lãng mạn"
+  reviews:
+    new:
+      Your_Title: "TIÊU ĐỀ CỦA BẠN"
+      Your_review_content: "Nội dung bài viết của bạn"
