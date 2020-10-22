@@ -21,6 +21,7 @@
                         <%= image_tag("blog/details/blog-details-pic.jpg") %>
                     </div>
                 </div>
+    </section>
                 <!-- Anime Section Begin -->
     <section class="anime-details spad">
         <div class="container">
@@ -64,11 +65,11 @@
                                     </div>
                             <div class="anime__details__rating">
                                 <div class="rating">
-                                    <a href="#"><i class="fa fa-star"></i></a>
-                                    <a href="#"><i class="fa fa-star"></i></a>
-                                    <a href="#"><i class="fa fa-star"></i></a>
-                                    <a href="#"><i class="fa fa-star"></i></a>
-                                    <a href="#"><i class="fa fa-star-half-o"></i></a>
+                                    <a href="#"><i class="fa fa-star text-yellow"></i></a>
+                                    <a href="#"><i class="fa fa-star text-yellow"></i></a>
+                                    <a href="#"><i class="fa fa-star text-yellow"></i></a>
+                                    <a href="#"><i class="fa fa-star text-yellow"></i></a>
+                                    <a href="#"><i class="fa fa-star text-yellow"></i></a>
                                 </div>
                                 <span>1.029 Votes</span>
                                 <div class="anime__details__btn">
@@ -80,7 +81,7 @@
                                     <h4>Review :</h4>
                                 
                             <p> <%= @review.content.html_safe %> </p>
-                            <%= link_to "| edit" , edit_review_path(@review) %>
+                            
                            </div>
                                 </div>
                             </div>
@@ -89,7 +90,24 @@
                         </div>
                     </div>
                 </div>
-              
+              <div class="blog__details__tags">
+                            <a href="#">Healthfood</a>
+                            <a href="#">Sport</a>
+                            <a href="#">Game</a>
+
+                        </div>
+                        <div class="header__right"> 
+                            <%= link_to "Edit", edit_review_path(@review), class: "site-btn site-btn bg-blue" %> 
+                            <%= link_to "Delete", review_path(@review), method: :delete, data: { confirm: "Are you sure ?"}, class: "site-btn bg-blue" %> </div>
+                        <div class="blog__details__btns">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="blog__details__btns__item">
+                                        <h5><a href="#"><span class="arrow_left"></span> Building a Better LiA...</a>
+
+                                        </h5>
+                                    </div>
+                                </div>
                             <div class="blog__details__comment">
                                 <h4>3 Comments</h4>
                                 <div class="blog__details__comment__item">

@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   get 'pages/review'
   get 'films/index'
   get 'films/detail'
+  resources :reviews, only: [:create, :destroy]
   resources :films do
     resources :reviews
   end

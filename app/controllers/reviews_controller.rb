@@ -1,5 +1,6 @@
 class ReviewsController < ApplicationController
 
+
   def index
     @reviews = Review.all
   end  
@@ -22,6 +23,7 @@ class ReviewsController < ApplicationController
   end
   def show
     @review = Review.find_by id: params[:id]
+    @film = Film.find_by id: params[:film_id]
     if @review.nil?
       flash[:danger] = "Review is not exist !"
       redirect_to reviews_index_path
@@ -29,10 +31,13 @@ class ReviewsController < ApplicationController
   end 
 
   def edit
-  
+    @review = Review.find_by id: params[:id]
+    @film = @review.film
   end
 
   def update
+     @review = Review.find_by id: params[:id]
+    @film = @review.film
     if @review.update(review_params)
       flash[:success] = "Updated"
       redirect_to @review
@@ -42,9 +47,11 @@ class ReviewsController < ApplicationController
   end
   
   def destroy
+    @review = Review.find_by id: params[:id]
+    @film = @review.film
     @review.destroy
-    flash[:success] = "review deleted"
-    redirect_to request.referrer || root_url
+    flash[:danger] = "review deleted"
+    redirect_to reviews_index_path
   end
 
   private
@@ -52,7 +59,9 @@ class ReviewsController < ApplicationController
     params.require(:review).permit(:content, :image, :title, :film_id)
   end
 
-
-
+  def correct_user
+    @review = current_user.reviews.find_by(id: params[:id])
+    redirect_to root_url if @review.nil?
+  end
 
 end
