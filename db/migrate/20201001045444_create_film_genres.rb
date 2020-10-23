@@ -3,6 +3,7 @@ class CreateFilmGenres < ActiveRecord::Migration[6.0]
     create_table :film_genres do |t|
       t.string :film_id, foreign_key: true
       t.string :genres_id, foreign_key: true
+      
 
       t.timestamps
     end

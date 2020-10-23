@@ -8,6 +8,7 @@ vi:
       Blog_Details: "Nội dung chi tiết"
       Sign_Up: "Đăng kí"
       Sign_In: "Đăng nhập"
+      Sign_Out: "Đăng xuất"
       Our_Blog: "Bài viết"
       Contacts: "Liên hệ"
       Languages: "Ngôn ngữ"
@@ -40,3 +41,7 @@ vi:
     new:
       Your_Title: "TIÊU ĐỀ CỦA BẠN"
       Your_review_content: "Nội dung bài viết của bạn"
+  comments:
+    create:
+      Comment_Created: "Bình luận đã tạo"
+  

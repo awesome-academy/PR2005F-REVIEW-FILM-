@@ -6,6 +6,8 @@ class FilmsController < ApplicationController
 
   def show
   	@film = Film.find_by id: params[:id]
+    @comment = current_user.comments.build
+    @comments = @film.comments
   	if @film.nil?
   	   flash[:danger] = " Film is not exist !"
   	   redirect_to films_index_path
@@ -15,7 +17,7 @@ class FilmsController < ApplicationController
   private
 
   def film_params
-	  params.require(:film).permit(:name,:video)
+	  params.require(:film).permit(:name, :video)
   end
   
 end

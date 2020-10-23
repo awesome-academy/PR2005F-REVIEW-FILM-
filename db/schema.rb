@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_10_19_082615) do
+ActiveRecord::Schema.define(version: 2020_10_26_022142) do
 
   create_table "actors", force: :cascade do |t|
     t.string "name"
@@ -35,9 +35,10 @@ ActiveRecord::Schema.define(version: 2020_10_19_082615) do
   create_table "comments", force: :cascade do |t|
     t.string "content"
     t.integer "user_id"
-    t.integer "film_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.integer "cmt_duty_id"
+    t.string "cmt_duty_type"
   end
 
   create_table "directors", force: :cascade do |t|

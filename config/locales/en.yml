@@ -39,6 +39,7 @@ en:
       Blog_Details: "Blog Details"
       Sign_Up: "Sign Up"
       Sign_In: "Sign In"
+      Sign_Out: "Sign Out"
       Our_Blog: "Our Blog"
       Contacts: "Contacts"
       Languages: "Languages"
@@ -74,6 +75,8 @@ en:
       Your_Title: "Your_Title"
       Your_review_content: "Your review content"
 
-      
+  comments:
+    create:
+      Comment_Created: "Comment Created"
 
 

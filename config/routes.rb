@@ -9,6 +9,7 @@ Rails.application.routes.draw do
   resources :films do
     resources :reviews
   end
+  resources :comments
 
   namespace :admin do
           get 'static_pages/home'

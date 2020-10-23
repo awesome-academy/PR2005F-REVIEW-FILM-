@@ -11,23 +11,28 @@
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800;900&display=swap"
     rel="stylesheet">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
      <%= javascript_include_tag Ckeditor.cdn_url %>
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'flash.js' %>
   </head>
-
   <body>
      <%= render "layouts/header" %>   
-    <div class="" >
-        <% flash.each do |message_type, message| %>
+    <div id="" >
+      <div id="flash">
+          <% flash.each do |message_type, message| %>
           <div class="alert alert-<%= message_type %> text-black">
             <%= message %>  
           </div>
-        <% end %> 
+        <% end %>
+      </div>
+       
         <%= yield %>    
         <%= render 'layouts/footer'  %>     
     </div>
+    
   </body>
 </html>
