@@ -23,7 +23,8 @@ class ReviewsController < ApplicationController
   end
   def show
     @review = Review.find_by id: params[:id]
-    @film = Film.find_by id: params[:film_id]
+    @comment = current_user.comments.build
+    @comments = @review.comments
     if @review.nil?
       flash[:danger] = "Review is not exist !"
       redirect_to reviews_index_path

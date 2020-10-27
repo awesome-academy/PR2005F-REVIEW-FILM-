@@ -21,65 +21,32 @@
                 <div class="col-lg-6">
                     <div class="login__form">
                         <h3>Sign Up</h3>
-                        <form action="#">
-                            <div class="input__item">
-                                <input type="text" placeholder="Email address">
-                                <span class="icon_mail"></span>
-                            </div>
-                            <div class="input__item">
-                                <input type="text" placeholder="Your Name">
-                                <span class="icon_profile"></span>
-                            </div>
-                            <div class="input__item">
-                                <input type="text" placeholder="Password">
-                                <span class="icon_lock"></span>
-                            </div>
-                            <button type="submit" class="site-btn">Login Now</button>
-                        </form>
-                        <h5>Already have an account? <a href="#">Log In!</a></h5>
+                            <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+                          <%= render "devise/shared/error_messages", resource: resource %>
+
+                          <div class="input__item">
+                            <%= f.email_field :email, autofocus: true, autocomplete: "email", placeholder: "Email address" %>
+                          </div>
+                          <div class="input__item">
+                            <%= f.password_field :password, autocomplete: "new-password", placeholder: "Password" %>
+                          </div>
+                          <div class="input__item">
+                            <%= f.password_field :password_confirmation, autocomplete: "new-password", placeholder: "Password Confirm" %>
+                          </div>
+                          <div class="actions">
+                            <%= f.submit "Sign up", class: "site-btn" %>
+                          </div>
+                        <% end %>
+                       
                     </div>
                 </div>
-                <div class="col-lg-6">
-                    <div class="login__social__links">
-                        <h3>Login With:</h3>
-                        <ul>
-                            <li><a href="#" class="facebook"><i class="fa fa-facebook"></i> Sign in With Facebook</a>
-                            </li>
-                            <li><a href="#" class="google"><i class="fa fa-google"></i> Sign in With Google</a></li>
-                            <li><a href="#" class="twitter"><i class="fa fa-twitter"></i> Sign in With Twitter</a></li>
-                        </ul>
-                    </div>
-                </div>
+              
+                             <%= render "devise/shared/links" %>
+                       
+                    
             </div>
         </div>
     </section>
     <!-- Signup Section End -->
 
 
-<%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
-  <%= render "devise/shared/error_messages", resource: resource %>
-
-  <div class="field">
-    <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
-  </div>
-
-  <div class="field">
-    <%= f.label :password %>
-    <% if @minimum_password_length %>
-    <em>(<%= @minimum_password_length %> characters minimum)</em>
-    <% end %><br />
-    <%= f.password_field :password, autocomplete: "new-password" %>
-  </div>
-
-  <div class="field">
-    <%= f.label :password_confirmation %><br />
-    <%= f.password_field :password_confirmation, autocomplete: "new-password" %>
-  </div>
-
-  <div class="actions">
-    <%= f.submit "Sign up" %>
-  </div>
-<% end %>
-
-<%= render "devise/shared/links" %>

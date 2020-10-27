@@ -15,7 +15,6 @@ $fa-font-path: '@fortawesome/fontawesome-free/webfonts';
 @import '@fortawesome/fontawesome-free/scss/regular';
 @import '@fortawesome/fontawesome-free/scss/brands';
 @import '@fortawesome/fontawesome-free/scss/v4-shims';
-
 // background-image  của trang Sign In & Sign Up.
 .normal-breadcrumb {
 	background-image: url(normal-breadcrumb.jpg);
@@ -36,4 +35,10 @@ body {
 
 .u {
 	background-color: white;
+}
+
+.input[type=text] {
+	width: 100%;
+    border: none;
+    border-bottom: 4px solid #8842d5;  
 }

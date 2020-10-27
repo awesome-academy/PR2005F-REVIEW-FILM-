@@ -4,6 +4,8 @@ class CreateComments < ActiveRecord::Migration[6.0]
       t.string :content
       t.integer :user_id, foreign_key: true
       t.integer :film_id, foreign_key: true
+      t.integer :cmt_duty_id
+      t.string :cmt_duty_id
 
       t.timestamps
     end

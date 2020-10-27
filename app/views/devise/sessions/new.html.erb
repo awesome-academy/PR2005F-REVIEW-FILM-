@@ -40,18 +40,16 @@
                     <%= f.submit "Login Now", class: "site-btn" %>
                   </div>
                 <% end %>
-
-                <%= render "devise/shared/links" %>
                     </div>
                 </div>
                 <div class="col-lg-6">
                     <div class="login__register">
                         <h3>Dont’t Have An Account?</h3>
-                        <a href="#" class="primary-btn">Register Now</a>
+                        <%= link_to "REGISTER NOW", new_user_registration_path, class: "site-btn" %>
                     </div>
                 </div>
             </div>
-           
+            <%= render "devise/shared/links" %>
         </div>
     </section>
     <!-- Login Section End -->

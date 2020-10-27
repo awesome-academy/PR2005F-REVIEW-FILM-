@@ -4,5 +4,6 @@ class Film < ApplicationRecord
 	has_many :film_genres
 	has_many :ratings
 	has_many :people_films
+	has_many :comments, as: :cmt_duty
 	
 end
