@@ -53,9 +53,10 @@ en:
         Create_new_review: "Create new reviews"
         Pending: "Pending"
         Approved: "Approved"
-        Videos_&_Photos: "Videos & Photos"
         Videos: "Videos"
+        Create_a_video: "Create a video"
         Photos: "Photos"
+        All_Films: "All Films"
         Languages: "Languages"
         Settings: "Settings"
       header:
