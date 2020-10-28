@@ -2,7 +2,7 @@ vi:
   layouts:
     header:
       Homepage: "Trang Chủ"
-      Categories: "Thể loại"
+      Categories: "Danh mục"
       Anime_Details: "Chi tiết phim"
       Anime_Watching: "Xem phim"
       Blog_Details: "Nội dung chi tiết"
@@ -12,6 +12,7 @@ vi:
       Our_Blog: "Bài viết"
       Contacts: "Liên hệ"
       Languages: "Ngôn ngữ"
+      User: "Tài khoản"
     admin:
       sidebar:
         MAIN_NAVIGATION: "THANH ĐIỀU HƯỚNG"

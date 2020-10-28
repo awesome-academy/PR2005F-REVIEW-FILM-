@@ -43,6 +43,7 @@ en:
       Our_Blog: "Our Blog"
       Contacts: "Contacts"
       Languages: "Languages"
+      User: "User"
     admin:
       sidebar:
         MAIN_NAVIGATION: "MAIN NAVIGATION"
