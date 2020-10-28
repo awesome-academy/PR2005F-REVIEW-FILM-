@@ -23,12 +23,17 @@
                 <div class="col-lg-12">
                     <div class="anime__video__player">
                         <iframe width="1150" height="550" src="https://www.youtube.com/embed/pmanD_s7G3U?showinfo=0&autoplay=1&controls=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        
                     </div>
                     <div class="section-title">
                             <h5> Review </h5>
 
                         </div>
                       <i class="fas fa-arrow-right text-white"></i><span> <%= link_to "Review for us", new_film_review_path(@film), class: "site-btn" %> </span></br></br>
+                      
+                        <div class="header__right"> 
+                     <%= link_to "Edit", edit_admin_film_path(@film), class: "site-btn site-btn bg-blue" %> 
+                    <%= link_to "Delete", admin_film_path(@film), method: :delete, data: { confirm: "Are you sure ?"}, class: "site-btn bg-blue" %> </div>
                        <div class="blog__details__btns">
                             <div class="row">
                                 <div class="col-lg-6">

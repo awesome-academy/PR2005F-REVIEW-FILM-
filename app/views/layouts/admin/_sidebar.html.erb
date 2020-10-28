@@ -47,21 +47,21 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="pages/layout/fixed.html"><i class="fa fa-plus""></i>  <%= t ".Create_new_review" %> </a></li>
+            <li><a href="pages/layout/fixed.html"><i class="fa fa-plus"></i>  <%= t ".Create_new_review" %> </a></li>
             <li><a href="pages/layout/top-nav.html"> <i class="fas fa-spinner fa-pulse"></i>  <%= t ".Pending" %> </a></li>
             <li><a href="pages/layout/boxed.html"><i class="fa fa-check"></i>  <%= t ".Approved" %></a></li>
           </ul>
         </li>
         <li class="treeview">
           <a href="#">
-           <i class="fas fa-tv"></i> <span><%= t ".Videos_&_Photos" %> </span>
+           <i class="fas fa-tv"></i> <span><%= t ".Videos" %> </span>
             <span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="pages/forms/general.html"><i class="fas fa-film"></i>  <%= t ".Videos" %> </a></li>
-            <li><a href="pages/forms/advanced.html"><i class="fas fa-image"></i>  <%= t ".Photos" %></a></li>
+            <li> <%= link_to admin_films_path do  %><i class="fas fa-film"></i>  <%= t ".All_Films" %> <% end %></li>
+            <li> <%= link_to new_admin_film_path do  %><i class="fas fa-film"></i>  <%= t ".Create_a_video" %> <% end %></li>
           </ul>
         </li>
         <li class="header"> <i class="fas fa-cogs"></i>   <%= t ".Settings" %> </li><li class="treeview">

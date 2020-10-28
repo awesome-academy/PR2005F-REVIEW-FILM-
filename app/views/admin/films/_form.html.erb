@@ -1,0 +1,6 @@
+	<%= form_for([:admin, @film]) do |f|%>		
+					<%= f.text_field  :name, placeholder: "Name"%>	
+					<%= f.cktext_area :content, placeholder: "Content" %>
+					<%= f.file_field :image,class: "site-btn bg-blue" %>		
+					<%= f.submit "Post", class: "site-btn text-black" %>
+			<% end %>

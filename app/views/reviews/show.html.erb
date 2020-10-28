@@ -96,7 +96,7 @@
               </div>
                 <div class="header__right"> 
                     <%= link_to "Edit", edit_review_path(@review), class: "site-btn site-btn bg-blue" %> 
-                    <%= link_to "Delete", root_path, method: :delete, data: { confirm: "Are you sure ?"}, class: "site-btn bg-blue" %> </div>
+                    <%= link_to "Delete", review_path(@review), method: :delete, data: { confirm: "Are you sure ?"}, class: "site-btn bg-blue" %> </div>
                 <div class="blog__details__btns">
                     <div class="row">
                         <div class="col-lg-6">

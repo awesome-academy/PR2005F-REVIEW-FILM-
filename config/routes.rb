@@ -13,6 +13,7 @@ Rails.application.routes.draw do
 
   namespace :admin do
           get 'static_pages/home'
+          resources :films
         end
   devise_for :users,
             path: '',
