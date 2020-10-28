@@ -66,4 +66,6 @@ gem 'ckeditor'
 gem 'paperclip'
 gem "mini_magick"
 gem 'carrierwave'
+gem 'active_storage_validations', '0.8.2'
+gem 'image_processing'
 
