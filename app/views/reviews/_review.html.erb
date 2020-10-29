@@ -1,0 +1,23 @@
+<tr>
+ <td> <center> <b> <%= review.id %> </b></center>  </td>
+  <td class="title al va-t word-break">
+    <div class="img_review">
+          <%= image_tag review.image if review.image.attached? %>
+        </div>
+            </br>
+        <div class="detail"><div id="area5114">
+      <div id="info5114" rel="a5114" class="hoverinfo"></div>
+     </div>
+        <div class="di-ib clearfix"> <h3> <%= link_to (review.title), review %> </h3> </div><br><div class="information di-ib mt4">
+            TV (64 eps)<br>
+            Apr 2009 - Jul 2010<br>
+            1,983,740 members
+          </div></div>
+  </td>
+  <td class="score ac fs14"><center> <div class="js-top-ranking-score-col di-ib al" style="width: 44.25px;"><i class="fas fa-star text-yellow"></i><span class="text on score-label score-9"> 4.5</span></div></center>
+  </td>
+
+  <td class="score ac fs14"><center> <div class="js-top-ranking-score-col di-ib al" style="width: 44.25px;"><i class="fas fa-star text-black"></i><span class="text on score-label score-9">0.0</span></div></center>
+  </td>
+  <td> <center> <button class="site-btn bg-black text-white"><i class="fas fa-heart text-red"></i> to watchlists </button>  </center></td>
+</tr>

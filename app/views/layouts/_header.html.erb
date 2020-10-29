@@ -12,21 +12,11 @@
                     <div class="header__nav">
                         <nav class="header__menu mobile-menu">
                             <ul>
-                                <li class="active"> <%= link_to (t ".Homepage"), root_path %> </li>
-                                <li><a href="./categories.html"> <%= t ".Categories" %> <i class="fas fa-sort-down"></i></a>
-                                    <ul class="dropdown">
-                                        <li> <%= link_to ("Categories"), films_path %></li>
-                                        <li> <%= link_to (t".Anime_Watching"), films_path %> </a></li>
-                                        <li> <%= link_to (t".Blog_Details"), '#' %> </a></li>
-                                        <li> <%= link_to (t".Sign_Up"), new_user_registration_path %> </li>
-                                        <li> <%= link_to (t".Sign_In"), signin_path %> </li>
-                                        <li> <%= link_to (t".Sign_Out"), users_sign_out_path %> </li>
-
-                                    </ul>
+                                <li class="active"><a href="<%= root_path %>"> <i class="fas fa-home"></i>  <%= (t ".Homepage") %>  </a></li>
+                                <li><a href="<%= films_path %>"><i class="fas fa-tv"></i> <%= t ".Anime_Watching" %> </a>
                                 </li>
-                                <li> <%= link_to (t".Our_Blog"), reviews_path %> </li>
-                                <li><a href="#"> <%= t ".Contacts" %> </a></li>
-                                <li><a href="./categories.html"> <%= t ".Languages" %> <i class="fas fa-sort-down"></i></a>
+                                        <li><a href="<%= reviews_path %>"> <i class="fas fa-comments"></i>  <%= t".Our_Blog" %>  </a></li>
+                                <li><a href="./categories.html"> <i class="fa fa-language"></i>  <%= t ".Languages" %>  </a>
                                     <ul class="dropdown">
                                         <li>
                                          <%= link_to image_tag("united-states-of-america.png"), locale:"en" %>
@@ -35,6 +25,12 @@
                                         <li><%= link_to image_tag("vietnam.png"), locale:"vi" %></li>
                                     </ul>
                                 </li>
+                                <li><a href="#"> <span class="fas fa-user"></span> <%= t ".User" %>  <i class="fas fa-sort-down"></i> </a>
+                                 <ul class="dropdown">
+                                         <li> <%= link_to (t".Sign_Up"), new_user_registration_path %> </li>
+                                        <li> <%= link_to (t".Sign_In"), signin_path %> </li>
+                                        <li> <%= link_to (t".Sign_Out"), users_sign_out_path %> </li>
+                                    </ul></li>
                             </ul>
                         </nav>
                     </div>

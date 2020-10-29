@@ -14,6 +14,7 @@ class ReviewsController < ApplicationController
   end  
   def create
     @review = current_user.reviews.build(review_params)
+    @review.image.attach(params[:review][:image])
     if @review.save
       flash[:success] = "Review Created!"
       redirect_to @review

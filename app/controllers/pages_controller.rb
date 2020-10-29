@@ -1,9 +1,8 @@
 class PagesController < ApplicationController
 	
   def index
-  	@films = Film.all
+  	@films = Film.take(6)
+  	@reviews = Review.take(6)
   end
 
-  def contact
-  end
 end

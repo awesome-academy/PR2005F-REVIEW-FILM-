@@ -1,0 +1,20 @@
+<% @reviews.each do |review| %> 
+
+<div class="col-lg-4 col-md-6 col-sm-6">
+                                <div class="product__item">
+                                    <div class="product__item__pic set-bg" data-setbg="img/popular/popular-1.jpg">
+                                    	<%= image_tag review.image if review.image.attached? %>
+                                        <div class="comment"><i class="fa fa-comments"></i> 11</div>
+                                        <div class="view"><i class="fa fa-eye"></i> 9141</div>
+                                    </div>
+                                    <div class="product__item__text">
+                                        <ul>
+                                            <li>Active</li>
+                                            <li>Movie</li>
+                                        </ul>
+                                        <h5><%= link_to (review.title), review %> %></h5>
+                                    </div>
+                                </div>
+                            </div>
+
+<%end%>
